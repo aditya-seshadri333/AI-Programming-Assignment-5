@@ -31,10 +31,6 @@ def minimax(node, maximizing_player):
         return best_value
 
 
-# -------------------------
-# Test Case 1
-# -------------------------
-
 n1 = Node(3)
 n2 = Node(5)
 n3 = Node(2)
@@ -53,10 +49,6 @@ print("Test Case 1")
 print("Best Value =", minimax(root1, True))
 print()
 
-
-# -------------------------
-# Test Case 2
-# -------------------------
 
 a = Node(8)
 b = Node(4)
@@ -77,9 +69,6 @@ print("Best Value =", minimax(root2, True))
 print()
 
 
-# -------------------------
-# Test Case 3
-# -------------------------
 
 a = Node(1)
 b = Node(7)
