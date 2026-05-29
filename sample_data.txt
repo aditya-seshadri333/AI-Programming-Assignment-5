@@ -1,0 +1,18 @@
+City: Hyderabad
+
+Budget: 10000
+
+Days: 2
+
+Interest: Historical Places
+
+Knowledge Base
+
+Tourist Places:
+- Charminar
+- Golconda Fort
+- Salar Jung Museum
+
+Food:
+- Hyderabadi Biryani
+- Haleem
