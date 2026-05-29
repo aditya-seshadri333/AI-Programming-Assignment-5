@@ -30,24 +30,70 @@ def minimax(node, maximizing_player):
 
         return best_value
 
-# Leaf nodes
+
+# -------------------------
+# Test Case 1
+# -------------------------
+
 n1 = Node(3)
 n2 = Node(5)
 n3 = Node(2)
 n4 = Node(9)
 
-# MIN nodes
 left_min = Node()
 left_min.children = [n1, n2]
 
 right_min = Node()
 right_min.children = [n3, n4]
 
-# Root MAX node
-root = Node()
-root.children = [left_min, right_min]
+root1 = Node()
+root1.children = [left_min, right_min]
 
-# Run Minimax
-result = minimax(root, True)
+print("Test Case 1")
+print("Best Value =", minimax(root1, True))
+print()
 
-print("Best Value =", result)
+
+# -------------------------
+# Test Case 2
+# -------------------------
+
+a = Node(8)
+b = Node(4)
+c = Node(6)
+d = Node(2)
+
+left_min = Node()
+left_min.children = [a, b]
+
+right_min = Node()
+right_min.children = [c, d]
+
+root2 = Node()
+root2.children = [left_min, right_min]
+
+print("Test Case 2")
+print("Best Value =", minimax(root2, True))
+print()
+
+
+# -------------------------
+# Test Case 3
+# -------------------------
+
+a = Node(1)
+b = Node(7)
+c = Node(5)
+d = Node(3)
+
+left_min = Node()
+left_min.children = [a, b]
+
+right_min = Node()
+right_min.children = [c, d]
+
+root3 = Node()
+root3.children = [left_min, right_min]
+
+print("Test Case 3")
+print("Best Value =", minimax(root3, True))
