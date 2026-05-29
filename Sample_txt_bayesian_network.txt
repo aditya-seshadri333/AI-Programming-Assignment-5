@@ -1,0 +1,15 @@
+Bayesian Network
+
+Rain → Wet Grass
+
+Probabilities
+
+P(Rain) = 0.3
+
+P(Wet Grass | Rain) = 0.9
+
+P(Wet Grass | No Rain) = 0.2
+
+Expected Output
+
+P(Wet Grass) = 0.41
