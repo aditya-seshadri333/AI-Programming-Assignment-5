@@ -1,0 +1,53 @@
+class Node:
+    def __init__(self, value=None):
+        self.value = value
+        self.children = []
+
+
+def minimax(node, maximizing_player):
+
+    # Terminal node
+    if len(node.children) == 0:
+        return node.value
+
+    if maximizing_player:
+
+        best_value = float('-inf')
+
+        for child in node.children:
+            value = minimax(child, False)
+            best_value = max(best_value, value)
+
+        return best_value
+
+    else:
+
+        best_value = float('inf')
+
+        for child in node.children:
+            value = minimax(child, True)
+            best_value = min(best_value, value)
+
+        return best_value
+
+# Leaf nodes
+n1 = Node(3)
+n2 = Node(5)
+n3 = Node(2)
+n4 = Node(9)
+
+# MIN nodes
+left_min = Node()
+left_min.children = [n1, n2]
+
+right_min = Node()
+right_min.children = [n3, n4]
+
+# Root MAX node
+root = Node()
+root.children = [left_min, right_min]
+
+# Run Minimax
+result = minimax(root, True)
+
+print("Best Value =", result)
