@@ -1,0 +1,58 @@
+# AI Travel Planner
+
+tourist_places = {
+    "Historical Places": [
+        ("Charminar", 500),
+        ("Golconda Fort", 800),
+        ("Salar Jung Museum", 300)
+    ],
+
+    "Nature": [
+        ("Hussain Sagar", 200),
+        ("Nehru Zoological Park", 400),
+        ("KBR Park", 100)
+    ]
+}
+
+food_recommendations = [
+    ("Hyderabadi Biryani", 400),
+    ("Haleem", 300)
+]
+
+
+city = "Hyderabad"
+budget = 10000
+days = 2
+interest = "Historical Places"
+
+print("AI Travel Planner")
+print("------------------")
+print("City:", city)
+print("Budget:", budget)
+print("Days:", days)
+print("Interest:", interest)
+
+total_cost = 0
+
+print("\nTravel Plan\n")
+
+for day in range(days):
+
+    place, cost = tourist_places[interest][day]
+    total_cost += cost
+
+    print(f"Day {day+1}")
+    print("Visit:", place)
+
+    food, food_cost = food_recommendations[0]
+    total_cost += food_cost
+
+    print("Food:", food)
+    print()
+
+print("Estimated Cost =", total_cost)
+
+if total_cost <= budget:
+    print("Trip is within budget.")
+else:
+    print("Trip exceeds budget.")
