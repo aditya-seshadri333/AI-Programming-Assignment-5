@@ -1,0 +1,17 @@
+Entities
+
+India
+Hyderabad
+Charminar
+Biryani
+Tourist Place
+
+Relationships
+
+India contains Hyderabad
+
+Hyderabad contains Charminar
+
+Hyderabad famous_for Biryani
+
+Charminar is_a Tourist Place
