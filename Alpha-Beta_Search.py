@@ -59,9 +59,6 @@ def alpha_beta(node, depth, alpha, beta, maximizing_player):
         return best_value
 
 
-# -------------------------
-# Test Case 1
-# -------------------------
 
 n1 = Node(3)
 n2 = Node(5)
@@ -91,9 +88,7 @@ print(
 print()
 
 
-# -------------------------
-# Test Case 2
-# -------------------------
+
 
 a = Node(8)
 b = Node(4)
@@ -123,9 +118,7 @@ print(
 print()
 
 
-# -------------------------
-# Test Case 3
-# -------------------------
+
 
 a = Node(1)
 b = Node(7)
