@@ -1,15 +1,9 @@
-# Bayesian Network Example
-
-# Probability of Rain
 P_Rain = 0.3
 
-# Probability of Wet Grass given Rain
 P_WetGrass_given_Rain = 0.9
 
-# Probability of Wet Grass given No Rain
 P_WetGrass_given_NoRain = 0.2
 
-# Total Probability of Wet Grass
 P_WetGrass = (
     P_WetGrass_given_Rain * P_Rain
     +
