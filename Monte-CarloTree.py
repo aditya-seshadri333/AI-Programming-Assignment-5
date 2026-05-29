@@ -25,16 +25,16 @@ def mcts(root, iterations):
 
     for _ in range(iterations):
 
-        # Selection
+       
         current = root
 
         while current.children:
             current = random.choice(current.children)
 
-        # Simulation
+        
         result = current.value
 
-        # Backpropagation
+        
         current.visits += 1
         current.wins += result
 
@@ -45,10 +45,6 @@ def mcts(root, iterations):
 
     return best_child.value
 
-
-# -------------------------
-# Test Case 1
-# -------------------------
 
 n1 = Node(3)
 n2 = Node(5)
@@ -62,10 +58,6 @@ print("Test Case 1")
 print("Best Value =", mcts(root, 1000))
 print()
 
-# -------------------------
-# Test Case 2
-# -------------------------
-
 a = Node(8)
 b = Node(4)
 c = Node(6)
@@ -78,9 +70,6 @@ print("Test Case 2")
 print("Best Value =", mcts(root, 1000))
 print()
 
-# -------------------------
-# Test Case 3
-# -------------------------
 
 a = Node(1)
 b = Node(7)
