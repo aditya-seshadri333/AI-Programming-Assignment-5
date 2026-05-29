@@ -1,5 +1,3 @@
-# AI Travel Planner
-
 tourist_places = {
     "Historical Places": [
         ("Charminar", 500),
